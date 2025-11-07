@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnig Tailwind CSS</title>
+
+    <!-- css link -->
+     <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-[url('../src/images/img1.jpg')] bg-cover bg-no-repeat bg-center h-screen text-white">
+
+  <header class="bg-[#ffffff30] max-w-7xl mx-auto">
+    <nav class="flex justify-between items-center lg:px-10 px-6 py-4 lg:gap-8">
+      <!-- logo start -->
+       <div class="whitespace-nowrap">
+        <a class="text-lg font-medium border hover:bg-cyan-500 transition-all px-2 py-1 rounded-md" href="#">Tailwindcss Anytime</a>
+       </div>
+      <!-- logo end -->
+
+      <!-- menu items start -->
+       <div id="dropdown_menu" class="absolute -top-full left-0 max-lg:bg-[#ffffff30] w-full flex flex-col items-center gap-6 py-2 text-base font-medium lg:static lg:flex-row lg:justify-between">
+        <ul class="flex flex-col items-center gap-3 lg:flex-row lg:gap-6">
+          <li class="px-3 py-1 rounded-md hover:bg-cyan-500 transition-all"><a href="#">Home</a></li>
+          <li class="px-3 py-1 rounded-md hover:bg-cyan-500 transition-all whitespace-nowrap"><a href="#">Tailwind css tips</a></li>
+          <li class="px-3 py-1 rounded-md hover:bg-cyan-500 transition-all"><a href="#">Videos</a></li>
+          <li class="px-3 py-1 rounded-md hover:bg-cyan-500 transition-all"><a href="#">Blogs</a></li>
+          <li class="px-3 py-1 rounded-md hover:bg-cyan-500 transition-all"><a href="#">Courses</a></li>
+        </ul>
+        <!-- login start -->
+         <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-6">
+          <button class="px-3 py-1 rounded-md hover:bg-cyan-500 transition-all" type="button">Login</button>
+          <button class="bg-cyan-500 border-0 rounded-md text-white px-3 py-1 text-sm cursor-pointer hover:bg-cyan-600 whitespace-nowrap transition-all" type="button">Sign up</button>
+         </div>
+        <!-- login end -->
+       </div>
+      <!-- menu items end -->
+       <div id="toggle_btn" class="border p-2 rounded-md lg:hidden hover:bg-cyan-500 transition-all">
+        <i class="fa-solid fa-bars fa-xl"></i>
+       </div>
+    </nav>
+  </header>
+  
+
+
+    <!-- js link -->
+     <script src="https://kit.fontawesome.com/d83e18af63.js" crossorigin="anonymous"></script>
+     <script src="./js/index.js"></script>
+</body>
+</html>
